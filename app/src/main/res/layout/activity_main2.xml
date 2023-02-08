@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010F2B"
+    android:paddingHorizontal="15dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/programLan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dasturlash tillari"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/cPlusPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="7.5dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toTopOf="@id/python"
+        app:layout_constraintEnd_toStartOf="@id/java"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/programLan">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCplusplus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cplusplus"
+        app:layout_constraintBottom_toBottomOf="@id/cPlusPlus"
+        app:layout_constraintEnd_toEndOf="@id/cPlusPlus"
+        app:layout_constraintStart_toStartOf="@id/cPlusPlus"
+        app:layout_constraintTop_toTopOf="@id/cPlusPlus"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C++"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/cPlusPlus"
+        app:layout_constraintEnd_toEndOf="@id/cPlusPlus"
+        app:layout_constraintStart_toStartOf="@id/cPlusPlus"
+        app:layout_constraintTop_toBottomOf="@id/imgCplusplus" />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/java"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7.5dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toBottomOf="@id/cPlusPlus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cPlusPlus"
+        app:layout_constraintTop_toTopOf="@id/cPlusPlus">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgJava"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/java"
+        app:layout_constraintBottom_toBottomOf="@id/java"
+        app:layout_constraintEnd_toEndOf="@id/java"
+        app:layout_constraintStart_toStartOf="@id/java"
+        app:layout_constraintTop_toTopOf="@id/java"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/java"
+        app:layout_constraintEnd_toEndOf="@id/java"
+        app:layout_constraintStart_toStartOf="@id/java"
+        app:layout_constraintTop_toBottomOf="@id/imgJava" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/python"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="7.5dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toTopOf="@id/cSharp"
+        app:layout_constraintEnd_toStartOf="@id/javaScript"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cPlusPlus">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgPython"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/python"
+        app:layout_constraintBottom_toBottomOf="@id/python"
+        app:layout_constraintEnd_toEndOf="@id/python"
+        app:layout_constraintStart_toStartOf="@id/python"
+        app:layout_constraintTop_toTopOf="@id/python"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/python"
+        app:layout_constraintEnd_toEndOf="@id/python"
+        app:layout_constraintStart_toStartOf="@id/python"
+        app:layout_constraintTop_toBottomOf="@id/imgPython" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/flutter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7.5dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toBottomOf="@id/cSharp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cSharp"
+        app:layout_constraintTop_toTopOf="@id/cSharp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFlutter"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/flutter"
+        app:layout_constraintBottom_toBottomOf="@id/flutter"
+        app:layout_constraintEnd_toEndOf="@id/flutter"
+        app:layout_constraintStart_toStartOf="@id/flutter"
+        app:layout_constraintTop_toTopOf="@id/flutter"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flutter"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/flutter"
+        app:layout_constraintEnd_toEndOf="@id/flutter"
+        app:layout_constraintStart_toStartOf="@id/flutter"
+        app:layout_constraintTop_toBottomOf="@id/imgFlutter" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/cSharp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="7.5dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toTopOf="@id/kotlin"
+        app:layout_constraintEnd_toStartOf="@id/flutter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/python">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCsharp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@id/cSharp"
+        app:layout_constraintEnd_toEndOf="@id/cSharp"
+        app:layout_constraintStart_toStartOf="@id/cSharp"
+        app:layout_constraintTop_toTopOf="@id/cSharp"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C#"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/cSharp"
+        app:layout_constraintEnd_toEndOf="@id/cSharp"
+        app:layout_constraintStart_toStartOf="@id/cSharp"
+        app:layout_constraintTop_toBottomOf="@id/imgCsharp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/javaScript"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7.5dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toBottomOf="@id/python"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/python"
+        app:layout_constraintTop_toTopOf="@id/python">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgJS"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/javascript"
+        app:layout_constraintBottom_toBottomOf="@id/javaScript"
+        app:layout_constraintEnd_toEndOf="@id/javaScript"
+        app:layout_constraintStart_toStartOf="@id/javaScript"
+        app:layout_constraintTop_toTopOf="@id/javaScript"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JavaScript"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/javaScript"
+        app:layout_constraintEnd_toEndOf="@id/javaScript"
+        app:layout_constraintStart_toStartOf="@id/javaScript"
+        app:layout_constraintTop_toBottomOf="@id/imgJS" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/kotlin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="7.5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cSharp">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgKotlin"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/kotlin"
+        app:layout_constraintBottom_toBottomOf="@id/kotlin"
+        app:layout_constraintEnd_toEndOf="@id/kotlin"
+        app:layout_constraintStart_toStartOf="@id/kotlin"
+        app:layout_constraintTop_toTopOf="@id/kotlin"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/kotlin"
+        app:layout_constraintEnd_toEndOf="@id/kotlin"
+        app:layout_constraintStart_toStartOf="@id/kotlin"
+        app:layout_constraintTop_toBottomOf="@id/imgKotlin" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/go"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7.5dp"
+        android:background="@drawable/programming"
+        app:layout_constraintBottom_toBottomOf="@id/kotlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/kotlin"
+        app:layout_constraintTop_toTopOf="@id/kotlin">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgGo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/go"
+        app:layout_constraintBottom_toBottomOf="@id/go"
+        app:layout_constraintEnd_toEndOf="@id/go"
+        app:layout_constraintStart_toStartOf="@id/go"
+        app:layout_constraintTop_toTopOf="@id/go"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/go"
+        app:layout_constraintEnd_toEndOf="@id/go"
+        app:layout_constraintStart_toStartOf="@id/go"
+        app:layout_constraintTop_toBottomOf="@id/imgGo" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnInfo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/information"
+        app:layout_constraintBottom_toTopOf="@+id/java"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
